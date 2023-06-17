@@ -13,7 +13,7 @@ Video::Video()
     //Constructor por defecto de Video
 }
 
-Video::Video(string id, string nombre, float duracion, string genero, float calificacion, string fecha)
+Video::Video(string id, string nombre, string duracion, string genero, float calificacion, string fecha)
     : id(id), nombre(nombre), duracion(duracion), genero(genero), calificacion(calificacion), fecha(fecha)
 {
     //Constructor con parámetros de Video
@@ -34,7 +34,7 @@ std::string Video::getNombre()
     return nombre;
 }
 
-float Video::getDuracion()
+string Video::getDuracion()
 {
     return duracion;
 }
@@ -54,11 +54,10 @@ string Video::getFecha()
     return fecha;
 }
 
-//Da formato a la salida de información
 void Video::getInfo()
 {
-    std::cout << "ID: " << id << 
-    " Nombre: " << nombre 
+    cout << "ID: " << id
+    << " Nombre: " << nombre 
     << " Duracion: " << duracion 
     << " Genero: " << genero
     << " Calificacion: " << calificacion 
