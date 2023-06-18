@@ -3,8 +3,6 @@
 #include <string>
 #include <sstream>
 #include <vector>
-#include "Pelicula.h"
-#include "Video.h"
 #include "Plataforma.h"
 using namespace std;
 

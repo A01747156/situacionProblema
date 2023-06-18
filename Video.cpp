@@ -10,13 +10,13 @@ using namespace std;
 
 Video::Video()
 {
-    //Constructor por defecto de Video
+    // Constructor por defecto de Video
 }
 
-Video::Video(string id, string nombre, string duracion, string genero, float calificacion, string fecha)
+Video::Video(string id, string nombre, string duracion, string genero, double calificacion, string fecha)
     : id(id), nombre(nombre), duracion(duracion), genero(genero), calificacion(calificacion), fecha(fecha)
 {
-    //Constructor con parámetros de Video
+    // Constructor con parámetros de Video
 }
 
 void Video::setCalificacion(float num)
@@ -44,7 +44,7 @@ std::string Video::getGenero()
     return genero;
 }
 
-float Video::getCalificacion()
+double Video::getCalificacion()
 {
     return calificacion;
 }
@@ -57,9 +57,9 @@ string Video::getFecha()
 void Video::getInfo()
 {
     cout << "ID: " << id
-    << " Nombre: " << nombre 
-    << " Duracion: " << duracion 
-    << " Genero: " << genero
-    << " Calificacion: " << calificacion 
-    << " Fecha estreno: " << fecha << endl;
+         << " Nombre: " << nombre
+         << " Duracion: " << duracion
+         << " Genero: " << genero
+         << " Calificacion: " << calificacion
+         << " Fecha estreno: " << fecha << endl;
 }

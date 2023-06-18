@@ -10,25 +10,31 @@ Declara la clase Plataforma
 #include <vector>
 #include "Pelicula.h"
 #include "Video.h"
-//#include "Episodio.h"
+#include "Episodio.h"
 using namespace std;
 
 #ifndef PLATAFORMA_H
 #define PLATAFORMA_H
 
-class Plataforma{
-    private: 
-    //Vector de tipo apuntador de Pelicula
-    vector<Pelicula*> peliculas;
-    //vector<Episodio*> episodios;
-    public:
-    //Constructor default
+class Plataforma
+{
+private:
+    // Vector de tipo apuntador de Pelicula
+    vector<Pelicula *> peliculas;
+    vector<Episodio *> episodios;
+
+public:
+    // Constructor default
     Plataforma();
-    //Métodos
+    // Métodos
     void leerPeliculas();
-    void filtrarPeliCal(float cal);
+    void videosCal(double filCalif);
+    void videosGen(string gen);
+    void mostrarExS(string seri);
+    void filtrarPeliCal(double cal);
     void mostrarEpi(string ser);
-    void calificarPeli(string peli, float ncal);
+    void calificarVid(string peli, double ncal);
+    void promedioC(string epProm);
     void showMenu();
 };
 
